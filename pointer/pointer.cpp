@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
 main(){
-//what is pointer ?---> data type which holds the address of other data type
+//what is pointer ?---> is a variable which holds the address of other variable
 //& --> address of operatior
 //*---> dereferance  operator
 int score=5;
 cout<<"value of score :"<<score<<endl;
 cout<<"address of score :"<<&score<<endl;
+
+
 int *scr=&score;
 cout<<"address of the score using scr :" << scr<< endl;
 cout<<"value of the variable score using pointer :"<<*scr<<endl;
