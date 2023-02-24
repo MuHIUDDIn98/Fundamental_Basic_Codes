@@ -33,7 +33,7 @@ sum=num1+num2;
 cout<<setw(34)<<"Addtion of two number is ="<<sum<<endl;
 
 sub=num1-num2;
-cout<<setw(35)<<"substraction of two number is ="<<sub<<endl;
+cout<<setw(35)<<"substraction of two number is = : "<<sub<<endl;
 
 
 double mul=num1*num2;
