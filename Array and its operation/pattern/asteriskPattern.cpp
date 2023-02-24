@@ -30,6 +30,8 @@ int main()
         cout << endl;
     }
 
+    cout<<endl;
+
     for (int i = 0; i < 5; i++)
     {
 
@@ -41,7 +43,7 @@ int main()
             }
             else
             {
-                cout << "*";
+                cout << "* ";
             }
         }
         cout << endl;
