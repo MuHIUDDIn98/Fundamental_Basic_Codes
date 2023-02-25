@@ -17,39 +17,39 @@ sum(1,2);
 cout<<endl;
 sum(1,2,3,4);
 cout<<endl;
-sum(10.5);
+sum(1.5);
 cout<<endl;
 sum(10);
 
-    getch();
+   return 0;
 }
 void sum(int a,int b)
 {
   int sum=a+b;
-  cout<<"sum="<<sum;
+   cout<<a<<"+"<<b<<"="<<sum;
 
 
 }
 void sum(int a,int b,int c)
 {
   int sum=a+b+c;
-  cout<<"sum="<<sum;
+  cout<<a<<"+"<<b<<"+"<<c<<"="<<sum;
 
 
 }
 void sum(int a,int b,int c,int d)
 {
   int sum=a+b+c+d;
-  cout<<"sum="<<sum;
+  cout<<a<<"+"<<b<<"+"<<c<<"+"<<d<<"="<<sum;
 
 
 }
 void sum(int a){
 
-cout<<"sum int="<<a<<endl;
+cout<<a<<"="<<a<<endl;
 }
 
 void sum(double b){
 
-cout<<"sum double ="<<b<<endl;
+cout<<"sum ="<<b<<endl;
 }
