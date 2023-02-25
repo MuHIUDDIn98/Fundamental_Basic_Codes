@@ -4,7 +4,7 @@ using namespace std;
 double pow(double b,int e){
 
     double result=1;
-  for(int i= 0;i<= e;i++){
+  for(int i= 0;i< e;i++){
    result=result*b;
 
   
