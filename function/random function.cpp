@@ -8,6 +8,8 @@ int main() {
     for(int i=1; i<10; i++)
     {
          cout <<"random"<< rand()%10<<endl;
+
+         return 0;
     }
 
 
