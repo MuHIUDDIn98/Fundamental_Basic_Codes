@@ -35,9 +35,15 @@ int main()
             else
                 width = 0;
         }
+
+        rec(int l=0,int b=0){ //parametererized constructor 
+
+            setLength(l);
+            setBreath(b);
+        }
     };
 
-    rec r1, r2;
+    rec r1;
 
     r1.setLength(120);
     r1.setBreath(55);
@@ -45,8 +51,7 @@ int main()
     cout << "r1 Objects area: " << r1.area() << endl;
     cout << "r1 Objects Perimeter: " << r1.perimeter() << endl;
 
-    r2.setLength(320);
-    r2.setBreath(44);
+    rec r2(34,55);
     cout << "r2 Objects area: " << r2.area() << endl;
     cout << "r2 Objects Perimeter: " << r2.perimeter() << endl;
 }

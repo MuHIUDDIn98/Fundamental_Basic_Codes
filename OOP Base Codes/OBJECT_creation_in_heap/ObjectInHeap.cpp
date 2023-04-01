@@ -37,6 +37,5 @@ rec *q=new rec;
 q->length=77;
 q->width=36;
 cout<<"r3 Objects area: "<<q->perimeter()<<endl;
-cout<<"r3 Objects Perimeter: "<<q->area()<<endl;
-    
+cout<<"r3 Objects Perimeter: "<<q->area()<<endl;    
 }

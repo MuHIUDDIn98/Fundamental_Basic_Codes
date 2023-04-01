@@ -26,7 +26,7 @@ int main()
             if (i > 0)
                 length = i;
             else
-                width = 0;
+                length = 0;
         }
         void setBreath(int j)
         {
