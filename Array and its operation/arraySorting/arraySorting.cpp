@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void show(int a[], int array_size)
+void show(int a[], int array_size) //int a[] meanst pointing to a array address
 {
 	for (int i = 0; i < array_size; ++i)
 		cout << a[i] << " ";
