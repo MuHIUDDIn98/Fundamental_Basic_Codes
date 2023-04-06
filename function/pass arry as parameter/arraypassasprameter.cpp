@@ -2,10 +2,17 @@
 using namespace std;
 
 
-void printArray(int arr[], int siz){
-cout<<"array elements are :"<<endl;
-for(int x =0; x<siz; x++){
-    cout<<arr[x] <<" ";
+// void printArray(int arr[], int siz){ // here arr[] is a pointer it is passed by address  and int size is passed by value
+// cout<<"array elements are :"<<endl;
+// for(int x =0; x<siz; x++){
+//     cout<<arr[x] <<" ";
+// }
+
+// }
+
+void printArray(int *arr ,int size){   //int *arr works as pointer to both integer and  array 
+for(int i =0; i<size; i++){
+    cout<<arr[i] <<" ";
 }
 
 }

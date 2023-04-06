@@ -9,7 +9,7 @@ using namespace std;
 // };
 enum Color
 {
-    RED=1,
+    RED=5,
     GREEN,
     BLUE
 };
@@ -17,10 +17,7 @@ enum Color
 int main()
 {
 
-    Color c =GREEN;
-
-    // cout << "Enter your color name :";
-    // cin >> c;
+    Color c = GREEN;
 
     cout<<"Enum values :"<<RED<<endl;
     cout<<"Enum values :"<<GREEN<<endl;
