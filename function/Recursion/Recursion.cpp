@@ -16,5 +16,5 @@ int n;
 cout<<"Enter your number :";
 cin>>n;
 int factorial=fact(n);
-cout<<"factorial of "<<n<<"="<<factorial;
+cout<<"factorial of "<<n<<"="<<factorial;  //Desending 
 }
