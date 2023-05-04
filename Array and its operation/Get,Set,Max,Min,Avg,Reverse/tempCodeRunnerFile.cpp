@@ -1,0 +1,1 @@
+cout<<" value 1=sorted 0=not sorted :"<<isSorted(arr1)<<endl;

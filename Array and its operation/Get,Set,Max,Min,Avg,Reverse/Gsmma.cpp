@@ -3,7 +3,7 @@ using namespace std;
 //==========arrayOfStructure===================//
 struct Array{
 
-int A[10];
+int A[20];
 int size; 
 int length;
 
@@ -106,21 +106,81 @@ void Reverse2(struct Array *arr)
  swap(&arr->A[i],&arr->A[j]);
  }
 
+
+
+}
+ //=====is sorted==========================//
+ int isSorted(struct Array arr)
+{
+ int i;
+ for(i=0;i<arr.length-1;i++)
+ {
+ if(arr.A[i]>arr.A[i+1])
+ return 0;
+ }
+ return 1;
+}
+//==================sorting=====================//
+void sorting(struct Array *arr)
+{
+
+    for (int i = 0; i < arr->length - 1; i++)
+    {
+        for (int j = i + 1; j < arr->length; j++)
+        {
+            if (arr->A[j] < arr->A[i])
+            {
+                int temp = arr->A[j];
+                arr->A[j] = arr->A[i];
+                arr->A[i] = temp;
+            }
+        }
+    }
+}
+//==================insertSort=============//
+
+void insertSort(struct Array *arr,int x){
+
+  int i=arr->length-1;
+if(arr->length==arr->size)
+  return ;
+while(i>=0 && arr->A[i]>x){
+arr->A[i+1]=arr->A[i];
+i--;
 }
 
+arr->A[i+1]=x;
+arr->length++;
+
+
+}
 int main(){
-struct Array arr1={{1,2,3,4,5,6},10,6};
+struct Array arr1={{19,3,9,11,13,2,33,4,25,5,6,1},20,12};
  Display(arr1);
-cout<<"Maximum number :"<<Max(arr1)<<endl;
-cout<<"Minimum number :"<<Min(arr1)<<endl;
-Set(&arr1,0,44);
-Display(arr1);
-cout<<"Maximum number :"<<Max(arr1)<<endl;
-cout<<"Sum of array :"<<Sum(arr1)<<endl;
-cout<<"Average of Array :"<<Avg(arr1)<<endl;
+cout<<"After first reverse :"<<endl;
 Reverse(&arr1);
 Display(arr1);
+cout<<"After 2nd reverse :"<<endl;
 Reverse2(&arr1);
 Display(arr1);
-
+cout<<"After Sorting array :"<<endl;
+sorting(&arr1);
+Display(arr1);
+cout<<"1 means sorted 0 means unsorted :"<<isSorted(arr1)<<endl;
+cout<<"After Insert sort 7 :"<<endl;
+insertSort(&arr1,7);
+Display(arr1);
+cout<<"After Insert sort 10 :"<<endl;
+insertSort(&arr1,10);
+Display(arr1);
+cout<<"After Insert sort 77 :"<<endl;
+insertSort(&arr1,77);
+Display(arr1);
+cout<<"arr1 length :"<<arr1.length<<endl;
+Set(&arr1,10,44);
+Display(arr1);
+cout<<"Maximum number :"<<Max(arr1)<<endl;
+cout<<"Minimum number :"<<Min(arr1)<<endl;
+cout<<"Sum of array :"<<Sum(arr1)<<endl;
+cout<<"Average of Array :"<<Avg(arr1)<<endl;
 }
