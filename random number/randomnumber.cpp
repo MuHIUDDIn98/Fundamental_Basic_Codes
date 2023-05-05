@@ -2,7 +2,7 @@
 #include<stdlib.h>
 using namespace std;
 
-main(){
+int main(){
 for(int i=0; i<=5; i++)
 {
 
@@ -13,4 +13,6 @@ cout<<"randomNumber"<<i<<"="<<random_number<<endl;
 cout<<"randomNumber"<<i<<"++="<<random_number+1<<endl;
 
 }
+
+return 0;
 }

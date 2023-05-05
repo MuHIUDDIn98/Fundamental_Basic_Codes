@@ -16,9 +16,9 @@ float num2;
 float sub;
 
 float sum;
-cout<<"Enter 1st number=";
+cout<<"Enter 1st number =";
 cin>>num1;
-cout<<"Enter 2nd number=";
+cout<<"Enter 2nd number =";
 cin>>num2;
 
 
