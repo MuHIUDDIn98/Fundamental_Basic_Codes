@@ -2,11 +2,14 @@
 #include <string> //including string library to declear string variable
 using namespace std;
 /*ASCII CODE (0-127)
-to represent 1 code need 7 bits 2^8
-(A-65 Z-90) (a-97 z-122) (0-48 9-57)*/
+to represent 1 code need 7 bits 2^7=128
+(A-65 Z-90) (a-97 z-122) (0-48 9-57)
+it allocate 1byte of data in memory*/
 
 /*Unicodes 
-16-bit
+16-bit 2byte of memory allocated
+4*4bit 
+4 digits of hexadcimal number represet on charecter
 2^16 */
 
 int main() {
@@ -52,6 +55,8 @@ int main() {
 
 
     string a = "I am learning C++";
+    //char* name0 = "anik";
+    cout<<name0<<endl;
     char ac[]={'I',' ','a','m',' ','l','e','a','r','n','i','n','g',' ', 'C','+','+',0};
     cout<<a<<endl;
     cout<<"Element of ac char array :"<<endl;
