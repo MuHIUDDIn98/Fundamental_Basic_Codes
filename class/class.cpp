@@ -18,7 +18,7 @@ public:
 main()
 {
  student alim;
-
+    //test hello
     alim.id=1214;
     alim.gpa=3.15;
     alim.display();
