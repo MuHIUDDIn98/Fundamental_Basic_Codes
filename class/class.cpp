@@ -18,7 +18,7 @@ public:
 main()
 {
  student alim;
-    //test hello test from pc again test
+    //test hello test from pc again test tst from office pc
     alim.id=1214;
     alim.gpa=3.15;
     alim.display();
