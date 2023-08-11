@@ -10,6 +10,8 @@ to represent 1 code need 7 bits 2^8
 2^16 */
 
 int main() {
+
+    char all=0;
     char temp0=48;
     char tempA=65;
     char tempa=97;
@@ -18,24 +20,30 @@ int main() {
     
 
     char temp1='A';
-    char Letter;
+    char ASCII;
 
 
      for(int A=0;A<10;A++){
-        Letter = temp0+A;
-        cout<<Letter<<" ";
+        ASCII   = temp0+A;
+        cout<<ASCII<<" ";
     }
 
     cout<<endl;
 
     for(int A=0;A<26;A++){
-        Letter = tempA+A;
-        cout<<Letter<<" ";
+        ASCII = tempA+A;
+        cout<<ASCII<<" ";
     }
     cout<<endl;
     for(int A=0;A<26;A++){
-        Letter = tempa+A;
-        cout<<Letter<<" ";
+        ASCII = tempa+A;
+        cout<<ASCII<<" ";
+    }
+
+    cout<<endl;
+     for(int A=0;A<127;A++){
+        ASCII = all+A;
+        cout<<ASCII<<"   ";
     }
 
     cout<<endl;
