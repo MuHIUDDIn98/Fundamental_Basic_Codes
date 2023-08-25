@@ -40,9 +40,5 @@ main()
 
      alim.display();
 
-
-
-
-
     lipi.display();
 }
