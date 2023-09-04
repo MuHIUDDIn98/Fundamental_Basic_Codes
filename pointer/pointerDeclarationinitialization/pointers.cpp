@@ -8,10 +8,10 @@ int *p;//declaration
 
 p=&x;//initialization
 
-cout<<"x  : "<<x<<endl;
-cout<<"&x : "<<&x<<endl;
-cout<<"p  : "<<p<<endl;
-cout<<"&p : "<<&p<<endl;
+cout<<"x  : "<<x<<endl; //value of x
+cout<<"&x : "<<&x<<endl; //address of x
+cout<<"p  : "<<p<<endl;  // address of x and p is same 
+cout<<"&p : "<<&p<<endl; // pointer variable address 
 cout<<"*p : "<<*p<<endl; //dereferancing
 
 
