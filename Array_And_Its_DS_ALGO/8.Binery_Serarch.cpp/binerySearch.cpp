@@ -12,7 +12,7 @@ int main()
     {
         cout << arr[i] << " ";
     }
-
+  //sorting process
     for (int i = 0; i < 10 - 1; i++)
     {
         for (int j = i + 1; j < 10; j++)

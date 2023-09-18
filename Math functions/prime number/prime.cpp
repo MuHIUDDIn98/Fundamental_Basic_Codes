@@ -1,31 +1,35 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-main()
+
+int checkPrime(int num)
 {
-
-    int cnt=0;
-    int num;
-    cout<<"Enter your number =";
-    cin>>num;
-
-    for(int i=2; i<num; i++){
-
-        if(num%i==0){
-
-            cnt++;
-            break;
-
+    if(num < 2){
+        return 0;
+    }
+    else{   
+       int x = num/2;
+        for(int i = 2; i < x; i++)
+        {
+            if(num % i == 0)
+            {
+                return 0;
+            }
         }
     }
-
-    if(cnt==0)
-    {
-
-        cout<<"Your entered number is a prime number";
-
-    }
-    else{
-
-        cout<<"Your entered number is not  a prime number";
-    }
+    
+    return 1;
 }
+
+int main()
+{
+    int a = 1, b = 100;
+    
+    for(int i=a; i <= b; i++){
+        if(checkPrime(i))
+            cout<<i<<" ";
+    }
+ 
+    return 0;
+}
+//Time Complexity: O(N^2)
+//Space Complexity O(1)
