@@ -54,48 +54,48 @@ int main() {
    
 
 
-    string a = "I am learning C++";
-    //char* name0 = "anik";
-    cout<<name0<<endl;
-    char ac[]={'I',' ','a','m',' ','l','e','a','r','n','i','n','g',' ', 'C','+','+',0};
-    cout<<a<<endl;
-    cout<<"Element of ac char array :"<<endl;
-    for(int i=0;i<18;i++){
-        cout<<ac[i];  
-    }
-    cout<<endl;
-    cout<<"char temp = 65  :"<<tempA <<endl;
-    cout<<"char temp ='A'  :"<<temp1<<endl;
+//     string a = "I am learning C++";
+//     // char* name0 = "anik";
+//     // cout<<name0<<endl;
+//     char ac[]={'I',' ','a','m',' ','l','e','a','r','n','i','n','g',' ', 'C','+','+',0};
+//     cout<<a<<endl;
+//     cout<<"Element of ac char array :"<<endl;
+//     for(int i=0;i<18;i++){
+//         cout<<ac[i];  
+//     }
+//     cout<<endl;
+//     cout<<"char temp = 65  :"<<tempA <<endl;
+//     cout<<"char temp ='A'  :"<<temp1<<endl;
 
 
-    char alfa[]={'A','B','C','D'};
-    cout<<"Element of alfa char array :"<<endl;
-    for(int i=0;i<4;i++){
-        cout<<alfa[i]<<" ";  
+//     char alfa[]={'A','B','C','D'};
+//     cout<<"Element of alfa char array :"<<endl;
+//     for(int i=0;i<4;i++){
+//         cout<<alfa[i]<<" ";  
 
-    }
+//     }
 
-    cout<<endl;
+//     cout<<endl;
 
-     char _alfa[]={65,66,67,68,69};
-    cout<<"Element of _alfa char array :"<<endl;
-    for(int i=0;i<5;i++){
-        cout<<_alfa[i]<<" ";  
+//      char _alfa[]={65,66,67,68,69};
+//     cout<<"Element of _alfa char array :"<<endl;
+//     for(int i=0;i<5;i++){
+//         cout<<_alfa[i]<<" ";  
 
-    }
-    char name[]="Muhiuddin";
-  cout<<"Element of char name array :"<<endl;
-    for(int i=0;i<10;i++){
-        cout<<name[i];  
+//     }
+//     char name[]="Muhiuddin";
+//   cout<<"Element of char name array :"<<endl;
+//     for(int i=0;i<10;i++){
+//         cout<<name[i];  
 
-    }
-    cout<<endl;
+//     }
+//     cout<<endl;
 
-    char _name[]={77,117,104,105,117,100,100,104,110,0};
-    cout<<"Element of char _name array :"<<endl;
-    for(int i=0;i<10;i++){
-        cout<<_name[i];  
+//     char _name[]={77,117,104,105,117,100,100,104,110,0};
+//     cout<<"Element of char _name array :"<<endl;
+//     for(int i=0;i<10;i++){
+//         cout<<_name[i];  
 
-    }
+//     }
     return 0;
 }
