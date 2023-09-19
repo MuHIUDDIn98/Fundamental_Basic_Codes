@@ -28,6 +28,19 @@ int main()
         if(checkPrime(i))
             cout<<i<<" ";
     }
+    cout<<endl;
+    cout<<"Ener your number to check  prime :";
+    int n;
+    cin>>n;
+    if(checkPrime(n)){
+
+        cout<<"yes it is a prime number ";
+    
+    }
+    else{
+
+        cout<<"it is not a prime number ";
+    }
  
     return 0;
 }
