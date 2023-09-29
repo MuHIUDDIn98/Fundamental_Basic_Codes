@@ -4,14 +4,14 @@ using namespace std;
 int Factors[1000];
 
 void factorFinder(int num){
-for(int i = 1; i <= num; i++ ){
+ for(int i = 1; i <= num; i++ ){
     if(num % i == 0 ){
   
       Factors[i] = i;
     }
 
     }
-}
+}   
 
 int main(){
 

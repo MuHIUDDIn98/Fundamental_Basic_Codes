@@ -23,26 +23,16 @@ int checkPrime(int num)
 int main()
 {
     int a = 1, b = 100;
+    cout<<"Enter your prime number range :";
+    cin>>a>>b;
     
     for(int i=a; i <= b; i++){
         if(checkPrime(i))
             cout<<i<<" ";
     }
     cout<<endl;
-    cout<<"Ener your number to check  prime :";
-    int n;
-    cin>>n;
-    if(checkPrime(n)){
 
-        cout<<"yes it is a prime number ";
     
-    }
-    else{
-
-        cout<<"it is not a prime number ";
-    }
- 
-    return 0;
 }
 //Time Complexity: O(N^2)
 //Space Complexity O(1)
