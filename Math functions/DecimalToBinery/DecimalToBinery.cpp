@@ -16,7 +16,9 @@ int main()
     }    
     
     for(i=i-1 ;i>=0 ;i--)    
-    {string ns=to_string(a[i]);
+    {
+    string ns=to_string(a[i]);
+    
     num+=ns;
     } 
     cout<<"Binary of the given number : ";   

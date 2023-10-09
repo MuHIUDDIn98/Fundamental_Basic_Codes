@@ -23,11 +23,27 @@ int checkPrime(int num)
 int main()
 {
     int a = 1, b = 100;
+    int primecount=0;
     
-    for(int i=a; i <= b; i++){
+    for(int i = a; i <= b; i++){
         if(checkPrime(i))
             cout<<i<<" ";
     }
+    cout<<endl;
+
+
+  cout<<"12th prime :";
+     for(int i=2; i <= 100; i++){
+        if(checkPrime(i)){
+            primecount++;
+            if(primecount==12)
+            {
+             cout<<i<<" ";
+            }
+           
+        }    
+    }
+
     cout<<endl;
     cout<<"Ener your number to check  prime :";
     int n;
