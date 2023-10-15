@@ -23,6 +23,7 @@ int main(){
      for(int i=0; i<n; i++){
         printf("%d ",arr[i]);
      }
+     arr[100] = 80;
 
     return 0;
 }
