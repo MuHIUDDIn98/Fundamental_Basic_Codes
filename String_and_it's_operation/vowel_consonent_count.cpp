@@ -25,7 +25,7 @@ ccount++;
 
 cout<<"Vowel number in your string :"<<vcount<<endl;
 cout<<"consonent number in your string :"<<ccount;
+
+
 return 0;
-
-
 }
