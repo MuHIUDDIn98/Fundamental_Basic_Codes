@@ -9,6 +9,6 @@ int main(){
     printf("%s\n",with_space); 
     printf("Enter your input using fgets() \n");
     fgets(with_space,18,stdin);  //it take enter as input=== fgets(arryname, size, stdin)==== size=char+null
-    printf("%s",with_space); 
+    printf("%s",with_space);   //it automatically add a null after the string
     return 0;
 }

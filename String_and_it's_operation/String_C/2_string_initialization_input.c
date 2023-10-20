@@ -10,16 +10,17 @@ int main(){
      char e[] ="anik";   //automatically added a null char into the last index
      char f[5]="anik";   //automatically added null char  into the last index
 
-
+   //printing the charecters of array b using char
      for(int i = 0; i<5; i++){
         printf("%c ",b[i]);
      }
     printf("\n");
+    //printing  the charecters off a array  using char 
     for(int i = 0; i<5; i++){
         printf("%d ",a[i]);
      }
      printf("\n");
-
+   //printing  the charecters of c array using char 
     for(int i = 0; i<5; i++){
         printf("%c ",c[i]);
      }
