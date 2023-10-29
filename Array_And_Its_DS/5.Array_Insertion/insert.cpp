@@ -9,7 +9,7 @@ int length;
 
 };
 //==============Forward display========================
-void Display(struct Array arr){
+void F_Display(struct Array arr){
 int i;
 cout<<"Elements are :";
 for(i=0;i<arr.length;i++){
@@ -19,7 +19,7 @@ for(i=0;i<arr.length;i++){
 cout<<endl;
 }
 //================================Reverse display===============
-void Ddisplay(struct Array arr){
+void R_Display(struct Array arr){
 
 
 cout<<"Elements are :";
@@ -60,24 +60,24 @@ void insert(struct Array *arr,int index,int x){
 
 int main(){
 struct Array arr ={{2,3,4,5,6},10,5};
-Display(arr);
+F_Display(arr);
 
-Ddisplay(arr);
+R_Display(arr);
 
 cout<<"Array Size :"<<arr.size<<endl;
 cout<<"Array length :"<<arr.length<<endl;
 Append(&arr,55);
-Display(arr);
+F_Display(arr);
 insert(&arr,2,444);
 cout<<"Afer inserting :"<<endl;
-Display(arr);
+F_Display(arr);
 
 cout<<"Array Size :"<<arr.size<<endl;
 cout<<"Array length :"<<arr.length<<endl;
 
 insert(&arr,0,4999);
 cout<<"Afer inserting :"<<endl;
-Display(arr);
+F_Display(arr);
 
 cout<<"Array Size :"<<arr.size<<endl;
 cout<<"Array length :"<<arr.length<<endl;
