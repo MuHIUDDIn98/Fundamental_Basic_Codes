@@ -72,6 +72,10 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
+<<<<<<< HEAD
+        "DIVISOR.C": "cpp"
+=======
         "copy.C": "cpp"
+>>>>>>> 3db9c854bf81ac6c0c134be4f8d81785d0b9e726
     }
 }
