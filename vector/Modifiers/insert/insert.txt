@@ -1,0 +1,2 @@
+In C++, you can't directly push an element into a specific index in a vector.
+The push_back operation always adds elements to the end of the vector. If you want to insert an element at a specific index, you can use the insert method.

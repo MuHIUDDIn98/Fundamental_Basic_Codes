@@ -1,0 +1,2 @@
+In C++, the vector class does not have a direct pop_back function that removes an element from a specific index. 
+Instead, you can use the erase function to remove an element from a specific position in the vector.

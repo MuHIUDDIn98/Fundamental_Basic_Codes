@@ -8,11 +8,13 @@ int &y=x;//y is not occupied in memeory
 y++;
 
 cout<<y<<endl;
+
+
 x++;
-
 cout<<x<<endl;
-y++;
 
+
+y--;
 cout<<x<<endl;
 
 
