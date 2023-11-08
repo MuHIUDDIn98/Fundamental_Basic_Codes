@@ -6,7 +6,18 @@ int main(){
      int n=0,k=0,star=1;
      scanf("%d",&k);
      if(k>=1 && k<=21 && k%2!=0){
-         n=k+5;
+         if(k==1) n=6;
+         if(k==3) n=7;
+         if(k==5) n=8;
+         if(k==7) n=9;
+         if(k==9) n=10;
+         if(k==11) n=11;
+         if(k==13) n=12;
+         if(k==15) n=13;
+         if(k==17) n=14;
+         if(k==19) n=15;
+         if(k==21) n=16;
+     
      }
     int space =n-1;
 
@@ -21,6 +32,16 @@ int main(){
         star+=2;
         printf("\n");
 
+     }
+
+     for(int i=0; i<5; i++){
+        for(int s=0; s<5; s++){
+         printf(" ");
+        }
+        for(int j=0; j<k; j++){
+         printf("*");
+        }
+        printf("\n");
      }
     return 0;
 }
