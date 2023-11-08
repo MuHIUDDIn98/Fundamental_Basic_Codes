@@ -41,7 +41,7 @@ int main(){
 
             for(int j=0; j<m; j++){
 
-                if(i+j== n-1){ // i+j == (row or col) -1
+                if(i+j == n-1){ // i+j == (row or col) -1
                     continue;
                 }
 
