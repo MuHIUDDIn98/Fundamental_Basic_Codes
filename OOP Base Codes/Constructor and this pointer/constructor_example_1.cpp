@@ -22,7 +22,7 @@ public:
 
 };
 
-//change from office
+
 main()
 {
  student alim(104,3.40);
@@ -31,10 +31,6 @@ main()
 
 
      alim.display();
-
-
-
-
 
     lipi.display();
 }

@@ -1,0 +1,16 @@
+there is two type of memory 
+
+1.static  limited than dynamic  memory  /
+
+    **compile time memory allocation we can't increase size during run time...
+
+    **it can automatically clear from stack memory
+
+
+2.dynamic memory is more than static memory / 
+
+    **depend on working requirement it can increase memeory size during run time ,
+    that is why we call it run time memory allocation
+
+    **we need to clear it manually from heap memory
+
