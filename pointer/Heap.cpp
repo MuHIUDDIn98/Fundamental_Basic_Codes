@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int size;
+    int size; 
     cout<<"Enter number of elements :";
     cin>>size;
     int B[size];

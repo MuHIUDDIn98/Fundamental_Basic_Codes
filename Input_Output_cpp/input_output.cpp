@@ -1,6 +1,6 @@
 #include<iostream>
 #include<iomanip> //for printing floating point value
-using namespace std;
+using namespace std; //it is like groupe... cout is located on namespace std
 
 int main(){
     int a,b;
@@ -9,6 +9,7 @@ int main(){
     char g[50];
 
     //integer input 
+    std::cout<<"test print using std namespace"<<endl;
     cout<<"Enter your numbers :";
     cin>>a>>b;
     cout<<endl;
