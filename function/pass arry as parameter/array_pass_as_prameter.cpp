@@ -10,13 +10,14 @@ using namespace std;
 
 // }
 
-void printArray(int *arr ,int size){   //int *arr works as pointer to both integer and  array 
+void printArray(int *arr ,int size){   //int *arr works as pointer to both integer and  array (always pass by address)
 for(int i =0; i<size; i++){
     cout<<arr[i] <<" ";
 }
 
 }
 
+//
 
 int main(){
 

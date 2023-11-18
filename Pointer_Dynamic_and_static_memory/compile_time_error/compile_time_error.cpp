@@ -20,7 +20,12 @@ cout<<"*p : "<<*p<<endl; //dereferancing the value of x
 int y=100;
 int *k=&y;
 
-printf(" &y        :%d\n",&y);
+
+
+printf(" &y        :%d\n",&y) //here compile time error will b e generate..
+
+
+
 printf(" &y        :%p\n",&y);
 printf(" k or &y   :%p\n",k);
 printf(" &k        :%p\n",&k);
