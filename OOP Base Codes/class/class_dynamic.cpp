@@ -23,8 +23,12 @@ Student rahim;
 rahim.id=35555;
 rahim.age=25;
 
+
 cout<<karim.id<<" "<<karim.age<<endl;
 cout<<rahim.id<<" "<<rahim.age<<endl;
+
+
+
 
 //creating object using constructor,
 // whenever object created constructor called
@@ -36,6 +40,8 @@ cout<<(*kakoli).id<<" "<<(*kakoli).age<<" "<<(*kakoli).name<<endl;
 //we must delete dynamically allocated object manually
 delete kakoli; //deallocation memory manually delete.....
  cout<<(*kakoli).id<<" "<<(*kakoli).age<<" "<<(*kakoli).name<<endl;//giving garbage value 
+
+
 
 
 return 0;

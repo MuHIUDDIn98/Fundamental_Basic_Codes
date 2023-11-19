@@ -13,6 +13,7 @@ class Student{
      id = i;
      cls = c;
      gpa = g;
+     cout<<"constructor called"<<endl;
  }
 
 };

@@ -16,6 +16,7 @@ public:
 
         id=x;
         gpa=y;
+        cout<<"constructor called"<<endl;
 
     }
 
