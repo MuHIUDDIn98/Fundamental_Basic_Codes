@@ -18,6 +18,7 @@ int main(){
     //rakib = akib
     //rakib->name = akib->name;
     //rakib->age = akib-name;
+    
 
     cout<<rakib->name<<" "<<rakib->age<<" "<<endl;
 
