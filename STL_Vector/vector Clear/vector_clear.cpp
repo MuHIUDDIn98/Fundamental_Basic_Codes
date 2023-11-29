@@ -15,9 +15,23 @@ int main(){
        cout<<v[i]<<" ";
     }
     cout<<endl;
+
+    if(v.empty()){
+      cout<<"v is empty "<<endl;
+    }
+    else{
+      cout<<"v is not empty"<<endl;
+    }
     v.clear();//when ever we use clear v.size()  will be 0 but memory remain same....
     cout<<"Size of vecotr :"<<v.size()<<endl;
     cout<<"After clear:"<<endl;
+    
+    if(v.empty()){
+      cout<<"v is empty "<<endl;
+    }
+    else{
+      cout<<"v is not empty"<<endl;
+    }
 
     for(int i=0; i<v.size(); i++){
        cout<<v[i]<<" ";
