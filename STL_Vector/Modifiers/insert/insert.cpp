@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     vector<int>v1(10);
     vector<int>v2 = {12,13,14,15,16};
+
     for(int i=0; i<10; i++){
         v1.insert(v1.begin()+i,i+2);
     }
@@ -12,6 +13,7 @@ int main(){
         cout<<x<<" ";
     }
     cout<<endl;
+
     cout<<" v1 new size: "<<v1.size()<<endl;
     for(int i=10; i<20; i++){
         v1.insert(v1.begin()+i,i+1);
@@ -33,12 +35,13 @@ int main(){
     for(int x:v1){
         cout<<x<<" ";
     }
+    //erease 
     v1.erase(v1.begin()+5);
     cout<<endl;
     for(int x:v1){
         cout<<x<<" ";
     }
-
+    //erease using end pointer...
     cout<<endl;
     v1.erase(v1.end()-20);
     for(int x:v1){
