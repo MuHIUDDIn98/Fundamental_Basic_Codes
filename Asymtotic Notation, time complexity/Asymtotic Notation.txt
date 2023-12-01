@@ -1,0 +1,10 @@
+Asymtotic Notation
+how mutch time and steps it takes to solve a problem..
+
+1.Big O Notation O() wors case complexity
+
+2.Big Omega best case complexity
+
+3.theta Average case complexity
+
+
