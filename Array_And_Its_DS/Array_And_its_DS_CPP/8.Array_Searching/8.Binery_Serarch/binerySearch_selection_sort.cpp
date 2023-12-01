@@ -12,7 +12,7 @@ int main()
     {
         cout << arr[i] << " ";
     }
-  //sorting process
+  //sorting process selection sort... 
     for (int i = 0; i < 10 - 1; i++)
     {
         for (int j = i + 1; j < 10; j++)
@@ -35,14 +35,16 @@ cout<<endl;
     cout<<endl;
 
     int key;
-    int l = arr[0];
-    int h = arr[9];
+    int l = 0;
+    cout<<" L :"<<l<<endl;
+    int r = 9;
+    cout<<" r :"<<r<<endl;
     cout << "Enter key  to search :" << endl;
     cin >> key;
 
-    while (l <= h)
+    while (l <= r)
     {
-        mid = (l + h) / 2;
+        mid = (l + r) / 2;
         if (key == arr[mid])
         {
             cout << "Found at index " << mid << endl;
@@ -50,11 +52,14 @@ cout<<endl;
         }
         else if (key < arr[mid])
         {
-            h = mid - 1;
+            r = mid - 1;
         }
         else
         {
             l = mid + 1;
-        }
+        }    
     }
+     if(l>r){
+            cout<<"key not found"<<endl;
+        }
 }
