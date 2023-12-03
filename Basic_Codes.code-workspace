@@ -1,8 +1,11 @@
 {
 	"folders": [
 		{
-			"name": "Your-Nescafe",
-			"path": "../../Your-nescafe/Your-Nescafe"
+			"path": "."
+		},
+		{
+			"name": "IR_Proximitry_test",
+			"path": "C:/Users/Anik/Documents/PlatformIO/Projects/IR_Proximitry_test"
 		}
 	],
 	"settings": {

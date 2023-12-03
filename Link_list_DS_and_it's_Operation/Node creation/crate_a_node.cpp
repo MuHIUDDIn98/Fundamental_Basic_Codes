@@ -19,6 +19,8 @@ int main(){
      cout<<b.value<<endl;
      b.next->value = 15;//assigning value
      cout<<a.value<<" "<<b.value<<" "<<c.value<<endl;
+     cout<<(*a.next).value<<" "<<(*b.next).value<<endl;
+     cout<<a.next->value<<" "<<b.next->value<<endl;
      
     return 0;
 }
