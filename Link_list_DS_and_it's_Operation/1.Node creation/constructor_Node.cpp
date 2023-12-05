@@ -3,7 +3,7 @@ using namespace std;
 class Node{
     public:
     int value;
-    Node* next;
+    Node* next; //self referencial poiniter..
 
     Node(int value){
         this->value=value;
