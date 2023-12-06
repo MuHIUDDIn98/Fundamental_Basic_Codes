@@ -1,11 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
-			"name": "IR_Proximitry_test",
-			"path": "C:/Users/Anik/Documents/PlatformIO/Projects/IR_Proximitry_test"
+			"name": "YL-Lite_TTGO_WiFi_PIO",
+			"path": "../../YL-Lite_TTGO_WiFi_PIO"
 		}
 	],
 	"settings": {
