@@ -11,16 +11,16 @@ int main(){
  
      Node a,b,c;
      a.value = 10;
-     a.next = &b;
-     b.next = &c;
-     c.next = NULL;
+     a.next = &b; //assigning  a objests next node address..&b
+     b.next = &c; //assigning  b objests next node address..&c
+     c.next = NULL;//assiging c objects next node (NULL)
      a.next->value = 3; //assigning value
      (*a.next).value = 103;
      cout<<b.value<<endl;
      b.next->value = 15;//assigning value
-     cout<<a.value<<" "<<b.value<<" "<<c.value<<endl;
-     cout<<(*a.next).value<<" "<<(*b.next).value<<endl;
-     cout<<a.next->value<<" "<<b.next->value<<endl;
+     cout<<"a Value :"<<a.value<<"  b value: "<<b.value<<" c Value :"<<c.value<<endl;
+     cout<<"b value :"<<(*a.next).value<<" c value :"<<(*b.next).value<<endl;
+     cout<<"b value :"<<a.next->value<<" c value :"<<b.next->value<<endl;
      
     return 0;
 }
