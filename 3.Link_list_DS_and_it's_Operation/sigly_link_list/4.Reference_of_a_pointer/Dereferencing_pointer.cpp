@@ -2,7 +2,7 @@
 using namespace std;
 void fun(int *p){    
     *p = 20;  //dereferencing 
-    cout<<"*p :"<<*p<<endl;
+    cout<<"*p :"<<*p<<endl;//addres of p located in func printing 
     cout<<"func called"<<endl;
     cout<<"address of p   :"<<&p<<endl; //different address..
 }
@@ -14,6 +14,6 @@ int main(){
     fun(ptr);  //fun(&val)
     cout<<"address of ptr :"<<&ptr<<endl; //different address...
     cout<<"val after:"<<val<<endl;
-    cout <<"val after:" <<*ptr << endl;
+    // cout <<"val after:" <<*ptr << endl;
     return 0;
 }
