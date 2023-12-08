@@ -13,26 +13,6 @@ public:
     }
 };
 
-void insert_at_tail(Node *&head, int val)
-{
-    Node *newNode = new Node(val);
-
-    if (head == NULL)
-    {
-        head = newNode;
-             << endl
-             << endl;
-        return;
-    }
-    Node *tmp = head;
-    while (tmp->next != NULL)
-    {
-        tmp = tmp->next;
-    }
-    tmp->next = newNode;
-}
-
-
 void print_Link_list(Node *head)
 {
     Node *tmp = head;
@@ -46,23 +26,36 @@ void print_Link_list(Node *head)
          << endl;
 }
 
+void Insert_at_tail(Node *&head,Node *&tail, int val) //o(1)
+{
+    Node *newNode = new Node(val);
+    if (head == NULL)
+    {
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+    tail->next = newNode;
+    tail = newNode;
+
+
+}
+
 int main()
 {
     Node *head = NULL;
-
-    int value;
-    
+    Node *tail = NULL;
+    Node *head1 = NULL;
+    Node *tail1 = NULL;
     while (true)
     {
-        cin >> value;
-        if(value == -1) break;
-        insert_at_tail(head,value);
-
-      
-        
+        int val;
+        cin >> val;
+        if (val == -1)
+            break;
+        Insert_at_tail(head,tail,val);
     }
-
     print_Link_list(head);
-
+   
     return 0;
 }

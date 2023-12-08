@@ -97,7 +97,13 @@ int main()
             cout << "Value:";
             cin >> value;
             cout << endl;
-            insert_at_position(head, 3, value);
+            insert_at_position(head, pos, value);
+            cout<<head<<endl;
+            cout<<head->next<<endl;
+            cout<<head->next->next<<endl;
+            cout<<head->next->next->next<<endl;
+            cout<<head->next->next->next->next<<endl;
+            cout<<head->next->next->next->next->next<<endl;
         }
         else if (option == 4)
         {

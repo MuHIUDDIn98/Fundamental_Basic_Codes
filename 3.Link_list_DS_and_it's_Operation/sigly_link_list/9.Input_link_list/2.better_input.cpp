@@ -54,8 +54,8 @@ int main(){
     Node *tail = NULL;
     int val;
     while(true){
-        cin>>val;
         if(val == -1) break;
+        cin>>val;
         insert_tail(head,tail,val);
     }
 
