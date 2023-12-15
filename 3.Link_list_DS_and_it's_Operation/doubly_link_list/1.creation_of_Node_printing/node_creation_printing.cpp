@@ -53,7 +53,6 @@ int main()
     print_link_list(head);
 
     cout << endl
-         << endl
          << endl;
 
     reverse_print_link_list(tail);

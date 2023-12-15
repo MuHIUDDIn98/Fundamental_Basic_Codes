@@ -83,7 +83,7 @@ void insert_at_tail(Node *&head,Node *&tail,int val){
      }
      tail->next = newNode;
      newNode->prev = tail;
-     tail = newNode;
+     tail = tail->next;
 }
 
 

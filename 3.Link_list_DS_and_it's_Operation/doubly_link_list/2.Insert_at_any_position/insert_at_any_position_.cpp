@@ -44,23 +44,6 @@ int size(Node *head){
  return count;
 }
 
-void insert_at_position(Node *&head,Node *&tail,int pos,int val){ //avoid last index 
-
-    // if(head == NULL || pos == 0){
-    //    insert_at_head(head,tail,val);
-    // }
-    Node *newNode = new Node(val);
-    Node *tmp = head;
-    for(int i=1; i<pos-1; i++){
-         tmp = tmp->next;
-    }
-    newNode->next = tmp->next;
-    tmp->next = newNode;
-    newNode->next->prev = newNode;
-    newNode->prev = tmp;
-
-  
-}
 
 void insert_at_head(Node *&head, Node *&tail,int val){
      Node *newNode = new Node(val);
@@ -73,6 +56,7 @@ void insert_at_head(Node *&head, Node *&tail,int val){
      head->prev = newNode;
      head = newNode;
 }
+
 
 void insert_at_tail(Node *&head,Node *&tail,int val){
      Node *newNode = new Node(val);
@@ -87,20 +71,66 @@ void insert_at_tail(Node *&head,Node *&tail,int val){
 }
 
 
+void insert_at_position(Node *&head,Node *&tail,int pos,int val){ 
+
+    if(pos>size(head)){
+            cout<<"invalud position"<<endl;
+            return;
+        }
+    else if(pos == size(head)){
+
+        insert_at_tail(head,tail,val);
+        return;
+    }
+    else if(pos == 0){
+        insert_at_head(head,tail,val);
+        return;
+    }
+    Node *newNode = new Node(val);
+    Node *tmp = head;
+    for(int i=1; i<pos; i++){
+         tmp = tmp->next;
+    }
+    newNode->next = tmp->next;
+    tmp->next = newNode;
+    newNode->next->prev = newNode;
+    newNode->prev = tmp;  
+}
+
+
 int main()
 {
 
-    Node *head = NULL;
-    Node *tail = NULL;
+    Node *head = new Node(1);
+    Node *a = new Node(2);
+    Node *b = new Node(3);
+    Node *c = new Node(4);
 
+    head->next = a;
+    a->next = b;
+    b->next = c;
+
+    a->prev = head;
+    b->prev = a;
+    c->prev = b;
+
+    Node * tail = c;
+
+    print_link_list(head);
+
+    cout << endl
+         << endl;
+    reverse_print_link_list(tail);
+    cout<<endl;
 
    
-    int val;
+    int pos,val;
 
     while(true){
-     cin>>val;
-     if(val == -1) break;
-     insert_at_tail(head,tail,val);
+        cout<<"Enter Pos , val :"<<endl;
+        cin>>pos>>val;
+        if(val== -1) break;
+        insert_at_position(head,tail,pos,val);
     }
 
     print_link_list(head);

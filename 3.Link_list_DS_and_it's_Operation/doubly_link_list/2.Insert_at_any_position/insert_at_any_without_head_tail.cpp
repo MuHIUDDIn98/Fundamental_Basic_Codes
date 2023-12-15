@@ -89,8 +89,12 @@ int main()
     cout<<"Enter Pos , val :"<<endl;
     cin>>pos>>val;
     if(val== -1) break;
+
     if(pos>=size(head)){
-        cout<<"invalud position"<<endl;
+        cout<<"invalud position at tail"<<endl;
+    }
+    if(pos==0){
+        cout<<"invalud position at head"<<endl;
     }
     else{
      insert_at_position(head,pos,val);

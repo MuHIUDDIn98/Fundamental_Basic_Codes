@@ -53,13 +53,25 @@ void delete_at_tail(Node *&tail){
 
 }
 
+void delte_at_head(Node *&head){
+     Node *delNode = head;
+     head = head->next;
+     head->prev = NULL;
+     delete delNode;
+
+}
+
 void delte_at_position(Node *&head,Node *&tail, int pos){
     Node * tmp = head;
-    if(pos == size(head)){
+    if(pos == size(head)-1){
         delete_at_tail(tail);
         return;
     }
-    else if(pos > size(head)){
+    else if(pos == 0){
+        delte_at_head(head);
+        return;
+    }
+    else if(pos >= size(head)){
         cout<<"Invalid pos"<<endl;
         return;
     }
@@ -85,26 +97,30 @@ int main()
     Node *b = new Node(13);
     Node *c = new Node(14);
     Node *d = new Node(15);
+    Node *e = new Node(16);
 
     head->next = a;
     a->next = b;
     b->next = c;
     c->next = d;
+    d->next = e;
 
     a->prev = head;
     b->prev = a;
     c->prev = b;
     d->prev = c;
-
-    Node * tail = d;
+    e->prev = d;
+    Node * tail = e;
 
     print_link_list(head);
     cout<< endl;
     reverse_print_link_list(tail);
     cout<<endl;
-    
-
-    delte_at_position(head,tail,4);
+    cout<<"size of link list :"<<size(head)<<endl;
+    int pos;
+    cin>>pos;
+    //here position is index..
+    delte_at_position(head,tail,pos);
    
     print_link_list(head);
     cout<<endl;

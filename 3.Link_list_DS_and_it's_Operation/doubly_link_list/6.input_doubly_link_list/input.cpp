@@ -45,17 +45,19 @@ int size(Node *head){
 }
 
 
-void insert_at_head(Node *&head, Node *&tail,int val){
+void insert_at_tail(Node *&head,Node *&tail,int val){
      Node *newNode = new Node(val);
      if(head == NULL){
         head = newNode;
         tail = newNode;
         return;
      }
-     newNode->next = head;
-     head->prev = newNode;
-     head = newNode;
+     tail->next = newNode;
+     newNode->prev = tail;
+     tail = newNode;
 }
+
+
 
 
 int main()
@@ -64,14 +66,14 @@ int main()
     Node *head = NULL;
     Node *tail = NULL;
 
-   
-    int pos,val;
-    cout<<"Enter val :"<<endl;
-    while(true){      
-        cin>>val;
-        if(val== -1) break;
-        insert_at_head(head,tail,val);
 
+   
+    int val;
+    cout<<"Enter your value :"<<endl;
+    while(true){
+     cin>>val;
+     if(val == -1) break;
+     insert_at_tail(head,tail,val);
     }
 
     print_link_list(head);
