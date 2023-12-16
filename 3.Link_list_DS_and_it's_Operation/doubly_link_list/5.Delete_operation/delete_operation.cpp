@@ -126,8 +126,7 @@ int main()
     cout<<endl;
     reverse_print_link_list(tail);
     cout<<endl;
-   
-    
+      
     return 0;
 }
 
