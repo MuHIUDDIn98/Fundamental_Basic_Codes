@@ -36,6 +36,7 @@ public:
         tail = tail->next;
     }
 
+
     void pop()
     {  sz--;
        Node *delNode = tail;
@@ -50,14 +51,20 @@ public:
        delete delNode;
     }
 
+
     int top()
     {
        return tail->value;
     }
+
+
+
     int size()
     {
         return sz;
     }
+
+
 
     bool empty()
     {
@@ -68,6 +75,7 @@ public:
         return false;
       }
     }
+
 };
 
 int main()
