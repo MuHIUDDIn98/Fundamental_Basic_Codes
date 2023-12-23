@@ -78,20 +78,22 @@ public:
 
 };
 
+
+
 int main()
 {   int n;
     cin>>n;
-    myStack st;
+    myStack st1;
     for(int i=0; i<n; i++){
         int x;
         cin>>x;
-        st.push(x);
+        st1.push(x);
     }
+ 
 
-    while(!st.empty()){
-       cout<<st.top()<<endl;
-       st.pop();
-    }
-
+        while(!st1.empty()){
+            cout<<st1.top()<<endl;
+            st1.pop();
+        }
     return 0;
 }
