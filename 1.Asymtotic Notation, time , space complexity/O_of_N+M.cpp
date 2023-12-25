@@ -14,6 +14,6 @@ int main(){
         cout<<b<<" ";
     }
 
-
+   //O(N+M)
     return 0;
 }
