@@ -60,3 +60,6 @@ int main()
 
     return 0;
 }
+
+//contest link:
+//https://www.hackerrank.com/contests/assignment-03-a-basic-data-structures-a-batch-04/challenges
