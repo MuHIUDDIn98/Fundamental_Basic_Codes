@@ -6,7 +6,7 @@
 using namespace std;
 
 // function prototype
-int convert(long long);
+int convert(long long n);
 
 int main() {
   long long n;
