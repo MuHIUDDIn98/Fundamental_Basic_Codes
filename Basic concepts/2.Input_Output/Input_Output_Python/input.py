@@ -6,5 +6,7 @@ age  = int(input('tell me your age :'))  #without int( ) bydefault it takes stri
 print(f'Your age is {age}')
 
 a = int(input("enter your number a :"))
+print(type(a))
 b = int(input("Enter your number b :"))
 print(f' {a} + {b} = {a+b}')      #fstring..
+print(type(b))

@@ -1,11 +1,11 @@
 price_of_polau = int(input("Enter your polau price:"))
 
 if price_of_polau<=100 :
-    print("ami raji polau khabo.")
+    print("i am agree to eat polau.")
     if price_of_polau>60 and price_of_polau<100 :
-     print("i want kabab extra ")
+     print("I want to eat kabab ")
 else:
-    print("ami raji na\n")
+    print("I am not agree\n")
 
 Ethical_hacker = input("If you are a ethical Hacker write 'True'")
 programmer = input("If you are a programmer write 'True'")

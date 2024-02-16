@@ -2,6 +2,7 @@
 a = 3
 b = 5
 c = 3.17
+#f string method
 about_variable  = f'{a} variable type is {type(a)}' #fstring...
 about_c = f'{c} variable type is {type(c)}' #type finding..
 print(about_c)
