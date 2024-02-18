@@ -8,6 +8,7 @@ class Myclsss:
         
 
 
+    
 #creating Objects to access attribute of a clss
 obj = Myclsss()
 obj.func1()
@@ -23,6 +24,12 @@ obj3 = Myclsss()
 obj1.a = 3
 obj2.a = 4
 
+
+#printing objects
+print(obj)
 print(obj2.a)
+
+
+
 
 
