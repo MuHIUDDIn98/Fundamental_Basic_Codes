@@ -24,7 +24,7 @@ c1 = customer("Rayhan")
 c1.add_to_cart("mosquitto_bat")
 c1.add_to_cart("Tea")
 c1.add_to_cart("Milk")
-c1.add_to_cart("Sugar")
+c1.add_to_cart("Sugar")             
 c1.show_cart()
 print(f'Total cost: {c1.total_cost()}')
         
