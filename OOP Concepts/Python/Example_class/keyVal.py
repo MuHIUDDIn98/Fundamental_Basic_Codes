@@ -7,7 +7,7 @@ value = 0
 for k in fruit:
    print("-----------")
    if k == key :
-      value = fruit[k]
+      value = fruit[k] 
       break
   
 print("The the value for the key mango : " + str(value))
