@@ -4,7 +4,7 @@ list1 = [] #empty list
 numbers = [1,2,3,4,5] #list of integers
 colors = ['red','blue','green']
 mixed_list = [1,2,3,8,'red'] #mixed list
-my_list = ['Python','java',[1,2,3,4,5],'anik'] #list can have another list
+my_list = ['Python','java',[1,2,3,4,5],'anik'] #list can have another list nested list
 
 
 #accessing elements from list
@@ -16,7 +16,7 @@ print(numbers[-2]) # second last elements of list
 
 print("==========")
 
-i = 4   #printing list items from reverse..
+i = 4   #printing list items from reverse.. using index
 for item in numbers:
     print(numbers[i])
     i= i-1
