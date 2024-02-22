@@ -1,0 +1,2 @@
+Write a program to create function calculation() such that it can accept two variables and calculate addition and subtraction.
+ Also, it must return both addition and subtraction in a single return call. Receive the returned values and print the type. 
