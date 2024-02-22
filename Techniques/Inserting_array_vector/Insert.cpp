@@ -22,7 +22,7 @@ int main(){
     
     for(int i=0; i<M+N; i++){
         if(i == (M+N)-1){
-            cout<<A[i]<<;
+            cout<<A[i]<<" ";
         }
         else{
             cout<<A[i]<<" ";
