@@ -70,7 +70,7 @@ print(my_list)
 print(my_list[3])
 print(my_list[3][2])
 
-
+#to know more check goto python list operaitons
 
 
 
