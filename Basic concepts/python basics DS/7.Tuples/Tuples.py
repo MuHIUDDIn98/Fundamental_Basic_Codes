@@ -1,6 +1,6 @@
 #tuple is similar to a list
 
-#unlike lists, elements once assigned to a tuple  cannot be changed
+#unlike lists, elements once assigned to a tuple  cannot be changed(imutable)
 #elements are placed inside parenthesis
 
 
@@ -55,3 +55,9 @@ for item in my_tuple34:
 
 #we cannot delete items in tuples
 # we cannot delete the tuple itself
+
+#we can change inside the list elements
+nested_Tuple_list = ([1,2,3,4],[5,6,7,8],[9,10,11,12])
+print(nested_Tuple_list)
+nested_Tuple_list[1][3] = 3333
+print(nested_Tuple_list)
