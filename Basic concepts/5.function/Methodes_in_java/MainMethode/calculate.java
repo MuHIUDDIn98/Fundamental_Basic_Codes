@@ -1,3 +1,4 @@
+package MainMethode;
 public class calculate {
     public int addition(int j, int i){
         return (i+j);
