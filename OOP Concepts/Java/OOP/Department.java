@@ -5,11 +5,13 @@ public class Department {
     public int dep_id;
     public int no_of_emp;
 
-    public void add_dep(){
-        System.out.println("dep added ");
-    }
-    public void cng_dep(){
-        System.out.println("change depperment ");
+    public void display(){
+        System.out.println("Dep name "+dep_name);
+        System.out.println("Dep ID "+dep_id);
+        System.out.println("Dep emp number "+no_of_emp);
+        
+        
+
     }
 
 }

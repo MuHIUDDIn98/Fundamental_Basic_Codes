@@ -12,7 +12,7 @@ public class MethodeCalling {
         go1();
 
     }
-    public static void go1(){
+    public static void go1(){           //we don't need to create an object
         System.out.println("go1");
     }
     public void go2(){
