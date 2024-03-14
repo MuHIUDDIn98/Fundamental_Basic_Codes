@@ -1,3 +1,4 @@
+package company;
 public class company {
     public static void main(String[] args){
         Department d = new Department();

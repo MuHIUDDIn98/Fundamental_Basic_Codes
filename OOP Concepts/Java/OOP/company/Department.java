@@ -1,3 +1,4 @@
+package company;
 public class Department {
     //non static global variables
 
