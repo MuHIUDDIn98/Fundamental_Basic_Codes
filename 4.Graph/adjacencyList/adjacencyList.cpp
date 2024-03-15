@@ -14,11 +14,19 @@ int main(){
     }
 
 
-    cout<<"=========printing========="<<endl;
+    cout<<"=========printing 3 index's vector========="<<endl;
     for(int i=0; i<AdCL[3].size();i++){
 
         cout<<AdCL[3][i]<<" ";
     }
+    cout<<endl;
+    cout<<"=========printing 4 index's vector========="<<endl;
+    for(int i=0; i<AdCL[4].size();i++){
+
+        cout<<AdCL[4][i]<<" ";
+    }
+    cout<<endl;
+
 
 
     return 0;
