@@ -14,7 +14,7 @@ int main(){
     }
 
 
-    cout<<"=================="<<endl;
+    cout<<"=========printing========="<<endl;
     for(int i=0; i<AdCL[3].size();i++){
 
         cout<<AdCL[3][i]<<" ";
