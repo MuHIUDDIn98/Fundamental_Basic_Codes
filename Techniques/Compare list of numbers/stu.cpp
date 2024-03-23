@@ -9,7 +9,7 @@ struct Student {
     int roll;
     int marks;
 
-    Student(string _name, int _roll, int _marks) {
+    Student(string name, int roll, int marks) {
         this->name = name;
         this->roll = roll;
         this->marks = marks;
