@@ -47,5 +47,5 @@ Feel free to explore the folders and dive into the topics you want to practice.
 To use this repository, simply clone it to your local machine:
 
 ```bash
-git clone https://github.com/your-username/coding-practice.git
+git clone https://github.com/MuHIUDDIn98/Fundamental_Basic_Codes.git
 
