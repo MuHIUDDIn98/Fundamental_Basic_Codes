@@ -42,3 +42,10 @@ Each language folder further categorizes topics based on different fundamental c
 
 Feel free to explore the folders and dive into the topics you want to practice.
 
+## How to Use
+
+To use this repository, simply clone it to your local machine:
+
+```bash
+git clone https://github.com/your-username/coding-practice.git
+
