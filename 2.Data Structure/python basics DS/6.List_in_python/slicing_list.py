@@ -9,3 +9,4 @@ print(numbers[:])
 print(numbers[1:7:1]) #step 1
 print(numbers[1:7:2]) #step 2
 print(numbers[::-1]) #reverse
+print(numbers[8:2:-1])
