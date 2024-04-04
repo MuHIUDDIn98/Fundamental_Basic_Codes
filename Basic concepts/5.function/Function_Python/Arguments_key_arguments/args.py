@@ -3,7 +3,7 @@ def add(num1,num2):
     return total
 
 
-def mul(num1,num2=1): #default value num2 = 1,  we use default parameter always right side
+def mul(num1,num2=1): #default value num2 = 1,  we use default parameter always right side Default parameter
     return  num1 * num2
 
 def multiply_all(*numbers):
@@ -14,6 +14,16 @@ def multiply_all(*numbers):
         results*=num
         #print(f'results: {results}')
     return results
+
+def sum(*args):
+    sum = 0
+    for num in args:
+        sum = sum + num
+    return sum
+
+sumation = sum(5, 4) #output 5 + 4 = 9// Some code
+print(f'Multiple parameter passing without declear 5 + 4 : {sumation}')
+
 
 
 result = add(12,35)

@@ -23,4 +23,9 @@ def long_name(**kargs):
     
 long_name(first = 'MD' ,last = 'Muhiuddin',sur_name = 'Ahmed')
 
+def func( a, b, c):
+    return a, b, c # return as tuple (a, b, c)
+    return [a, b, c] # return as list [a, b, c]
+    return {'a': a, 'b': b} # return as dictionary
+
 
