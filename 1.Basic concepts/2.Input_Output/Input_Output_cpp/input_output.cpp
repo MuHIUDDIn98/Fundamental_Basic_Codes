@@ -33,5 +33,9 @@ int main(){
     cout<<"Enter your string with space :"<<endl;
     cin.getline(g,50);//with space printing 
 
+    //Manupulators 
+    int x = 456; int y = 40;
+ cout<<setw(5)<<x<<setw(10)<<y;
+
     return 0;
 }
