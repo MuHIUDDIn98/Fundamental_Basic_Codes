@@ -24,3 +24,7 @@ d.Display();
 
 
 }
+
+
+// The only difference between a structure and a class in C++ is that, by default, the
+// members of a class are private, while, by default, the members of a structure are public.
