@@ -18,6 +18,7 @@ int main(){
     }
 
     //putting edge count in the adjacency matrix 
+     cout<<"Enter your edges count :"<<endl;
     while(e--){
         int a,b;
         cin>>a>>b;
