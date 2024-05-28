@@ -11,7 +11,7 @@ public class arraylist {
         a.add("ashik");
         a.add("sakib");
         a.add("israt");
-
+        //geting arrayList element by index
         System.out.println(a.get(0));
 
         for (int i = 0; i < a.size(); i++) {
@@ -20,14 +20,14 @@ public class arraylist {
 
         }
 
-        System.out.println("................");
+        System.out.println("..... printing using for each loop...........");
 
         for (String val : a) {
 
             System.out.println(val);
         }
 
-        System.out.println("................");
+        System.out.println("......checking element exits in arraylist..........");
         System.out.println(a.contains("anik"));
         System.out.println(a.contains("rakib"));
 
@@ -38,6 +38,8 @@ public class arraylist {
         //converting name array into array list
         List<String> nameArrayList = Arrays.asList(name);
 
+
+        System.out.println("Checking Arrray elements exits in my Array");
         System.out.println(nameArrayList.contains("Rakib"));
         System.out.println(nameArrayList.contains("subrata"));
 

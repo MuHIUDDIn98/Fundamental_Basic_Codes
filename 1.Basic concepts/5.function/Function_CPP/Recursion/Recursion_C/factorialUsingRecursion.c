@@ -1,5 +1,6 @@
 #include<stdio.h>
 long long int fact(int n){
+    printf("%d",n);
     if(n==0){
         return 1;
     }

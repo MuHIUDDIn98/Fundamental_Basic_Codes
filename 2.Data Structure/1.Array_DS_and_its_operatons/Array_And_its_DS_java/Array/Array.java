@@ -18,11 +18,11 @@ public class Array {
 
     int[] arr2 = {1,2,3,4,5};
 
-    for(int i=0; i<5; i++){
+    for(int i=0; i<arr2.length; i++){
 
-        System.out.println(arr[i]);
+        System.out.println(arr2[i]);
     }
-
+    //declearing array in heap
     String[] s = new String[5];
     s = new String[] {"shihab","reja","subrata","Rayhan"};   
     
