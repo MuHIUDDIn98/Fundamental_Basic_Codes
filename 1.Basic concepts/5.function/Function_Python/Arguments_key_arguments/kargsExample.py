@@ -13,9 +13,11 @@ print(name)
 #==============key args =================
 def long_name(**kargs):
     print(kargs)
+    print(f'first_name :{kargs["first_name"]}')
+    print(f'Last_name :{kargs["Last_name"]}')
     for key,Value in kargs.items():
-        print(f'{key} {Value}')
+        print(f'{key} : {Value}')
     
     
-
+long_name(first_name = "Muhiuddin", Last_name = "Ahmed")
 

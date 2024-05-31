@@ -1,6 +1,7 @@
 def arg_test(name,*args):
     print(name)
     print(*args)
+    print(f'args print {args[0]}')
     print(f'args print {args[1]}')
     sum = 0
     for i in args:
