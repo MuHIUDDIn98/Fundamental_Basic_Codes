@@ -36,6 +36,18 @@ int main(){
         cout<<endl;
     }
 
+    cout<<"=========Checking the result========="<<endl;
+    for(int i=0; i<n; i++){
+        for(int j=0;j<n;j++){
+
+            if(matrix[i][j]==1){
+                cout<<"node "+ to_string(i)+"--> " +to_string(j)+"  connected"<<endl;
+            }
+
+
+        }
+    }
+
 
     return 0;
 }
