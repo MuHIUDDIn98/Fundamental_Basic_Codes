@@ -8,7 +8,9 @@ d2 = thur;
 int diff = d2-d1; // using arithmetic operator
 cout<<"Days between :"<<diff<<endl;
 if(d1<d2) // using relational operator
-    cout<<"d1 comes first";
+    cout<<"d1 comes first"<<endl;
+    cout<<"sun :"<<sun<<endl;
+    cout<<days{sat};
  return 0;
 }
 

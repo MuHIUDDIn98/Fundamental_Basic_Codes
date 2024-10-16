@@ -7,7 +7,9 @@ int main(){
     cout<<"Enter your node and edge count in adjacency matrix :"<<endl;
     cin>>n>>e;
     int matrix[n][n];
+    //set all value in matrix zero
     memset(matrix,0,sizeof(matrix));
+    cout<<"===========priting matrix elements============="<<endl;
     for(int i=0; i<n; i++){
 
         for(int j=0; j<n; j++){
@@ -16,9 +18,7 @@ int main(){
         }
         cout<<endl;
     }
-
-    //putting edge count in the adjacency matrix 
-     cout<<"Enter your edges count :"<<endl;
+    cout<<"====================Enter your edges============="<<endl;
     while(e--){
         int a,b;
         cin>>a>>b;
@@ -26,6 +26,7 @@ int main(){
         matrix[b][a] = 1;
     }
    //adjacency matrix of given edge count
+   cout<<"===========priting the adjecency matrix============== "<<endl;
     for(int i=0; i<n; i++){
 
         for(int j=0; j<n; j++){
@@ -33,6 +34,18 @@ int main(){
             cout<<matrix[i][j]<<" ";
         }
         cout<<endl;
+    }
+
+    cout<<"=========Checking the result========="<<endl;
+    for(int i=0; i<n; i++){
+        for(int j=0;j<n;j++){
+
+            if(matrix[i][j]==1){
+                cout<<"node "+ to_string(i)+"--> " +to_string(j)+"  connected"<<endl;
+            }
+
+
+        }
     }
 
 

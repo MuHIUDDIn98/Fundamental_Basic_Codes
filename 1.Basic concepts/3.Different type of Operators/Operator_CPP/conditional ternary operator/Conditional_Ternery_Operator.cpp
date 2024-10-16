@@ -8,6 +8,7 @@ main()
    cout<<"Enter two numbers=";
    cin>>num1;
    cin>>num2;
+  //condition ? expression_if_true : expression_if_false
 
    int max=num1>num2?num1:num2;
 
