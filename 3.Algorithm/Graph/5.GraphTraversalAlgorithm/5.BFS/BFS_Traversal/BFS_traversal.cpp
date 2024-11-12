@@ -40,6 +40,7 @@ void bfs(int src){
 int main(){
     int n,e;
     cin>>n>>e;
+    //creating adjacency list according to given graph
     while(e--){
 
         int a,b;
