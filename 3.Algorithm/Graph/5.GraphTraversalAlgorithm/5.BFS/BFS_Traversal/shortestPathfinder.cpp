@@ -5,6 +5,8 @@ vector<int> v[1005];
 //
 bool vis[1005];
 //
+
+int level[1005];
 queue<int> q;
 
 
@@ -13,6 +15,7 @@ void bfs(int src,int dest){
     
     q.push(src);
     vis[src] = true;
+    level[src] = 0;
 
     while(!q.empty()){
         int par = q.front();
@@ -24,6 +27,7 @@ void bfs(int src,int dest){
             if(!vis[child]){
                 q.push(child);
                 vis[child] =true;
+                level[child] = level[par]+1;
 
             }
 
