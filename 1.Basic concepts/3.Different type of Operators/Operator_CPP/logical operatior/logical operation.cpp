@@ -1,79 +1,55 @@
-#include<iostream>
+#include <iostream>
+#include <cctype> // for toupper and tolower
 using namespace std;
 
-main(){
+int main() {
+    // =========================== ||
+    // Vowel Check Using OR (||)
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
 
-//&&
-//||
-// !
-//toupper()
-//tolower()
-//===========================||=============================
-/*char ch;
-cout<<"Enter your charecter=";
-cin>>ch;
+    ch = tolower(ch); // Convert to lowercase for comparison
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        cout << char(toupper(ch)) << " is a vowel.\n";
+    } else {
+        cout << char(toupper(ch)) << " is a consonant.\n";
+    }
 
-ch=tolower(ch);
-if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+    // =========================== &&
+    // Largest of 3 Numbers Using AND (&&)
+    int num1, num2, num3;
+    cout << "\nEnter three numbers: ";
+    cin >> num1 >> num2 >> num3;
 
-        ch=toupper(ch);
-   cout<<ch<<" is vowel"<<endl;
+    if (num1 > num2 && num1 > num3) {
+        cout << num1 << " is the greatest number.\n";
+    } else if (num2 > num1 && num2 > num3) {
+        cout << num2 << " is the greatest number.\n";
+    } else if (num3 > num1 && num3 > num2) {
+        cout << num3 << " is the greatest number.\n";
+    } else {
+        cout << "There is a tie.\n";
+    }
 
-}
-else{
-    ch=toupper(ch);
-    cout<<ch<<" is consonent"<<endl;
-}
-*/
-//===========================&&=====================================
+    // =========================== && and || (Leap Year)
+    int year;
+    cout << "\nEnter a year: ";
+    cin >> year;
 
-/*int num1,num2,num3;
-cout<<"Enter your numbers=";
-cin>>num1>>num2>>num3;
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        cout << year << " is a leap year.\n";
+    } else {
+        cout << year << " is not a leap year.\n";
+    }
 
-if(num1>num2 &&num1>num3)
-{
+    // =========================== ! (NOT Operator)
+    bool isRainy = false;
+    if (!isRainy) {
+        cout << "\nIt's not raining. You can go outside!\n";
+    } else {
+        cout << "\nIt's raining. Better take an umbrella.\n";
+    }
 
-    cout<<num1<<" is the greatest number";
-}
-else if(num2>num1 && num2>num3){
-    cout<<num2<<" is the greatest number";
-
-}else if(num3>num2 && num3>num1)
-{
-
-    cout<<num3<<" is the greatest number";
-}
-
- /* int large;
-if(num1>num2 &&num1>num3)
-{
-     large=num1;
-}
-else if(num2>num1 && num2>num3){
-    large=num2;
-
-}else
-{
-
-   large=num3;
-}
-
-cout<<"large number is ="<<large;*/
-
-
-//=================leap year c++(&& and ||)=========================
-int year;
-
-cout<<"Enter your yera=";
-cin>>year;
-
-if((year%4==0&&year%100!=0)||year%400==0){
-
-   cout<<year<<" is leap year" <<endl;
-}
-else{
-    cout<<year<<"is not leap year";
-}
-
+    return 0;
 }
