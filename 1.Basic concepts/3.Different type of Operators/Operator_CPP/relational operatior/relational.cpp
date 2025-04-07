@@ -1,58 +1,40 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-main()
-{
+int main() {
     int marks;
 
-    cout<<"Enter your marks=";
-    cin>>marks;
+    // Input from user
+    cout << "Enter your marks: ";
+    cin >> marks;
 
-    if(marks>100)
-    {
-        cout<<"\"Invalid marks\""<<endl;
+    cout << "\n";
+
+    // Validate marks
+    if (marks > 100 || marks < 0) {
+        cout << "\"Invalid marks\"" << endl;
     }
-    else if (marks<0)
-    {
-
-        cout<<"\"marks invalid\""<<endl;
+    else if (marks >= 80) {
+        cout << "Grade: A+" << endl;
     }
-    else if (marks>=80)
-    {
-        cout<<"A+"<<endl;
-
+    else if (marks >= 70) {
+        cout << "Grade: A" << endl;
     }
-    else if (marks>=70)
-    {
-        cout<<"A"<<endl;
-
+    else if (marks >= 60) {
+        cout << "Grade: A-" << endl;
     }
-    else if (marks>=60)
-    {
-        cout<<"A-"<<endl;
-
+    else if (marks >= 50) {
+        cout << "Grade: B" << endl;
     }
-    else if (marks>=50)
-    {
-        cout<<"B"<<endl;
-
+    else if (marks >= 40) {
+        cout << "Grade: C" << endl;
     }
-    else if (marks>=40)
-    {
-        cout<<"C"<<endl;
-
+    else if (marks >= 33) {
+        cout << "Grade: D" << endl;
     }
-    else if (marks>=33)
-    {
-        cout<<"D"<<endl;
-
+    else {
+        cout << "Grade: F (Failed)" << endl;
     }
-    else
 
-         {cout<<"Failed";
-
-         }
-
-
-
+    return 0;
 }
