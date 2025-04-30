@@ -1,22 +1,16 @@
 str = "anik"
-str2= 'a'
+str2= 'aAnIk'
 str3 = """this is also a string"""
+str4 = str.title()
 
 print(str)
-print(type(str))
-print(str.capitalize())
-print(str.isnumeric())
-print(str.isalpha())
-print(str2)
-print(type(str2))
-print(str2.capitalize())
-print(str2.isnumeric())
-print(str2.isalpha())
-print(str3)
-print(type(str3))
-print(str3.capitalize())
-print(str3.isnumeric())
-print(str3.isalpha())
-print(str3.islower())
-print(str3.capitalize())
-# https://www.w3schools.com/python/python_ref_string.asp
+print(f"str data type : {type(str)}")
+print(f"Capitalize : {str.capitalize()}")
+print(f"Upper case : {str.upper()}")
+l=str.upper()
+print(f"lower case : {str.lower()}")
+print(f"swapecase {str2} to {str2.swapcase()}")
+print("title of str : "+str4)
+rplc = str3.replace("string","tingTing")
+print(f"replase str3 content string :  {rplc}")
+print(f"count letter : {rplc.count('g')}")
