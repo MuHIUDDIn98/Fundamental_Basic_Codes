@@ -10,8 +10,8 @@ int main() {
     printf("x variable address or inside ptr value: %p\n",ptr);
     printf("ptr variable memory size %d\n",sizeof(ptr));
     printf("print ptr variable address       %p\n",&ptr);
-    printf("print x variable value %d\n",*ptr);
-    printf("print x variable value %d\n",x);
+    printf("print x variable value(*p) %d\n",*ptr);
+    printf("print x variable value     %d\n",x);
     x=1000;
     printf("print x variable value %d\n",*ptr);
     printf("print x variable value %d\n",x);
