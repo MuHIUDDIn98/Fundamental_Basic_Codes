@@ -3,6 +3,7 @@
 using namespace std; //it is like groupe... cout is located on namespace std
 
 int main(){
+    //initialize diffferent type of variables 
     int a,b;
     double c,d;
     string f;
