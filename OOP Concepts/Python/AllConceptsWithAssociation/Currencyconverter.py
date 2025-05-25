@@ -2,14 +2,14 @@ import time  # Import the time module for timestamps
 
 # --- Logger Class ---
 class Logger:
-    """Handles logging of currency conversions."""
+    #Handles logging of currency conversions.
 
     def __init__(self, log_file="conversion_log.txt"):
-        """Initializes the logger."""
+       #Initializes the logger.
         self.log_file = log_file
 
     def log(self, user, from_currency, to_currency, amount, result):
-        """Logs a conversion event with a timestamp."""
+        #Logs a conversion event with a timestamp.
         try:
             timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # Get formatted time
             with open(self.log_file, "a") as f:
@@ -23,17 +23,23 @@ class Logger:
         except IOError as e:
             print(f"Error: Could not write to log file {self.log_file}. {e}")
 
+
+
+
+
 # --- CurrencyConverter Class ---
 class CurrencyConverter:
-    """Handles currency conversion logic."""
+    #Handles currency conversion logic.
 
     __exchange_rates = {           #protected property of Currencycoverter
-        'USD': 1.0, 'EUR': 0.92, 'GBP': 0.79,
-        'JPY': 157.0, 'BDT': 117.50, 'INR': 83.33
+        'USD': 1.0, 
+        'EUR': 0.92,
+        'GBP': 0.79,
+        'BDT': 117.50,
     }
 
     def __init__(self, amount, from_currency, to_currency, logger_instance):
-        """Initializes the converter."""
+        #Initializes the converter.
         self.amount = float(amount)
         self.from_currency = from_currency.upper()
         self.to_currency = to_currency.upper()
@@ -41,29 +47,29 @@ class CurrencyConverter:
 
     @staticmethod
     def is_valid_currency(currency_code):
-        """Static Method: Checks if currency code exists."""
+        #Static Method: Checks if currency code exists.
         return currency_code.upper() in CurrencyConverter.__exchange_rates
 
     @classmethod
     def update_rates(cls, new_rates):
-        """Class Method: Updates exchange rates."""
+        #Class Method: Updates exchange rates.
         cls.__exchange_rates.update(new_rates)
         print("Exchange rates updated successfully.")
 
     @classmethod
     def get_rates(cls):
-        """Class Method: Gets current rates."""
+        #Class Method: Gets current rates.
         return cls.__exchange_rates
 
     def convert(self, user="DefaultUser"): #pass user name to add username into log file
-        """Instance Method: Performs conversion."""
+        #$Instance Method: Performs conversion.
         rates = CurrencyConverter.__exchange_rates
         rate_from = rates[self.from_currency]
         rate_to = rates[self.to_currency]
 
         amount_in_usd = self.amount / rate_from
         converted_amount = amount_in_usd * rate_to
-
+        # add to log file
         self.logger.log(
             user, self.from_currency, self.to_currency,
             self.amount, converted_amount
