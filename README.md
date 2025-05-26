@@ -66,17 +66,6 @@ Feel free to explore the folders and dive into the topics you want to practice.
 
 **Important:** You *must* replace `C++/PointersAndMemory/` with the actual path to your files in your repository. If you put them directly in the `C++` folder, the path would just be `C++/00pointer.md`, for example.
 
-## How to Use
-
-To use this repository, simply clone it to your local machine:
-
-```bash
-git clone [https://github.com/MuHIUDDIn98/Fundamental_Basic_Codes.git](https://github.com/MuHIUDDIn98/Fundamental_Basic_Codes.git)
-Contributing
-
-
-
-
 
 
 ## How to Use
