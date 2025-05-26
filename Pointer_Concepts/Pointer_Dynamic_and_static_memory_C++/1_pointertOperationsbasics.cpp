@@ -11,11 +11,13 @@ printf("printing the value of data is %d\n",data);
 
 char* pAddress=(char*)&data;//type casting for character
 int* PAddress=&data;
-printf("(address/pointer) value of data :  %p\n",&data);
-printf("address/pointer of pAddress :  %p\n",&pAddress);
+printf("(address/pointer) of data         :  %p\n",&data);
+printf("(address/pointer) of pAddress     :  %p\n",&pAddress);
+printf("Address of data and pAddress are different!!!!!\n");
 char value = *pAddress;         //dereferencing pointer 
-int value1=*PAddress;
+int value1 = *PAddress;
 
+printf("=======\n");
 printf("the value of data printing using dereferencing pAddress is %d \n",value);
 printf("the value of data printing using dereferencing PAdderss is %d \n",value1);
 
