@@ -5,7 +5,7 @@ using namespace std;
 class student
 {
 private:
-
+    //class variables
     int id;
     double gpa;
     string name;

@@ -16,7 +16,7 @@ class Student{
     //  this->cls = cls;
     //  this->gpa = gpa;
 
-     
+     //instance variable  (*this).roll
      (*this).roll = roll;
      (*this).id = id;
      (*this).cls = cls;

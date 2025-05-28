@@ -29,7 +29,8 @@ int main(){
     //cin>> rakib.roll >> rakib.cgpa >> rakib.name;
 
     
-    getchar(); //to capture enter 
+    getchar(); //to capture enter
+    //cin.ignore(); 
     cin.getline(rakib.name,100);
     cin>> rakib.roll >> rakib.cgpa;
     

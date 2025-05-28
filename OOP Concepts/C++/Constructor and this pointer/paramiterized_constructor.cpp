@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Student{
+class student{
 public:
     int id;
     int age;
@@ -11,7 +11,7 @@ public:
         cout<<"Default"<<endl;
     }
 
-    Student(int id, int age, char name[]){
+    student(int id, int age, char name[]){
         id = id;
         age = age;
         name = name;
@@ -23,7 +23,7 @@ int main(){
 
 //creating object using constructor,
 // whenever object created constructor called
-Student *kakoli = new Student(); // dynamically created object
+student *kakoli = new student(); // dynamically created object
 strcpy(kakoli->name, "kakoli");
 cout<<(*kakoli).id<<" "<<(*kakoli).age<<" "<<(*kakoli).name<<endl;
 //we must delete dynamically allocated object manually

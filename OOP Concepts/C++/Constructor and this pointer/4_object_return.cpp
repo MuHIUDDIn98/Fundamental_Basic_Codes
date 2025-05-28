@@ -1,13 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 class Student{
  public:
     int id;
     int roll;
     int cls;
     double gpa;
-
+//changing class variable using constructor
  Student(int r,int i, int c,double g){
      roll = r;
      id = i;
@@ -16,12 +17,20 @@ class Student{
      cout<<"constructor called"<<endl;
  }
 
+ 
+
 };
 
-int main(){
-    
-    Student rahim(21,4344,9,3.666);
-    cout<<rahim.roll<<" "<<rahim.id<<" "<<rahim.cls<<" "<<rahim.gpa<<endl;
+Student returnObjFunc(int r,int i, int c ,double g){
 
-    return 0;
+    Student ret(r,i,c,g);
+    return ret;
+ }
+
+int main(){
+Student r =returnObjFunc(2,3,4,5);
+cout<<r.cls<<"  "<<r.gpa<<"   "<<r.id<<"   "<<r.roll<<endl;
+
+   
+return 0;
 }
