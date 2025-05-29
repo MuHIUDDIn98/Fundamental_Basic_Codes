@@ -11,15 +11,15 @@ int subMark3;
 public:
 Student(int r,string n,int m1,int m2,int m3){
 
-roll=r;
-name=n;
-subMark1=m1;
-subMark2=m2;
-subMark3=m3;
-}
+    roll=r;
+    name=n;
+    subMark1=m1;
+    subMark2=m2;
+    subMark3=m3;
+    }
 
-int total();
-char grade();
+    int total();
+    char grade();
 
 
 };
