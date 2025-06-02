@@ -1,1 +1,0 @@
- string s("Hello world",7);

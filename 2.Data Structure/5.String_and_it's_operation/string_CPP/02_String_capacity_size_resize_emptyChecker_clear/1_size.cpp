@@ -12,7 +12,7 @@ int main(){
         cout<<a<<"with space string size: "<<a.size()<<endl;
 
 
-        //max possibel size check
+        //max possibel size check 1^6
         cout<<a<<"Maximum  size: "<<a.max_size()<<endl;
 
        
