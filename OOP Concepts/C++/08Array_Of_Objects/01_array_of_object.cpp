@@ -9,11 +9,6 @@ public:
 
     Product(){}; // default constructor
 
-    Product(int id, string name, double price){
-        this->id = id;
-        this->name = name;
-        this->price = price;
-    }
 
     void setValue(int id, string name, double price)
     {

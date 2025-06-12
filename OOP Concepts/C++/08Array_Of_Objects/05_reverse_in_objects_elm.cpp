@@ -18,7 +18,13 @@ int main(){
     for(int i=0; i<N; i++){
         cin>>St[i].name>>St[i].clas>>St[i].section>>St[i].id;       
     }
-     
+
+
+     cout<<"=========================================="<<endl;
+     for(int i=0; i<N; i++){
+        cout<<St[i].name<<" "<<St[i].clas<<" "<<St[i].section<<" "<<St[i].id<<endl;       
+    } 
+
     int l=0;
     int r = N-1;
     while(l<r){
@@ -26,7 +32,8 @@ int main(){
         l++;
         r--;
     }
-
+    
+     cout<<"=============AFTER SWAP ============================"<<endl;
     for(int i=0; i<N; i++){
         cout<<St[i].name<<" "<<St[i].clas<<" "<<St[i].section<<" "<<St[i].id<<endl;       
     }
