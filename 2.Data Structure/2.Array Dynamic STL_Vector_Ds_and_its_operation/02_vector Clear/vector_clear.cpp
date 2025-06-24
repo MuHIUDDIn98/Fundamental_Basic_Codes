@@ -22,7 +22,7 @@ int main(){
     else{
       cout<<"v is not empty"<<endl;
     }
-    v.clear();//when ever we use clear v.size()  will be 0 but memory remain same....
+    v.clear();//when ever we use clear - > v.size()  will be 0 but memory remain same.... values are same
     cout<<"Size of vecotr :"<<v.size()<<endl;
     cout<<"After clear:"<<endl;
     

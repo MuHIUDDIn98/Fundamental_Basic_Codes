@@ -23,5 +23,18 @@ int main() {
         cout << "Invalid index to remove." << endl;
     }
 
+
+    myVector.erase(myVector.begin()+1,myVector.begin()+3);
+
+
+    // Display the modified vector
+        cout << "Vector after removing element at index 1 to 3  :";
+        for (int num : myVector) {
+            cout << num << " ";
+        }
+        cout << endl;
+
+
+
     return 0;
 }
