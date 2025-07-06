@@ -65,7 +65,7 @@ void remove_duplicate(Node *&head){
 }
 
 int main()
-{
+{   // Write your code here
     Node *head = NULL;
     Node *tail = NULL;
     int val;
