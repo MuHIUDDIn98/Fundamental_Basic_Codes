@@ -44,7 +44,7 @@ int size(Node *head){
  return count;
 }
 
-void delete_at_tail(Node *&tail){
+void delete_at_tail(Node *&head ,Node *&tail){
 
     Node *delNode = tail;
     tail = tail->prev;   
@@ -53,7 +53,7 @@ void delete_at_tail(Node *&tail){
 
 }
 
-void delte_at_head(Node *&head){
+void delte_at_head(Node *&head , Node *&tail){
      Node *delNode = head;
      head = head->next;
      head->prev = NULL;
@@ -64,11 +64,11 @@ void delte_at_head(Node *&head){
 void delte_at_position(Node *&head,Node *&tail, int pos){
     Node * tmp = head;
     if(pos == size(head)-1){
-        delete_at_tail(tail);
+        delete_at_tail(head,tail);
         return;
     }
     else if(pos == 0){
-        delte_at_head(head);
+        delte_at_head(head,tail);
         return;
     }
     else if(pos >= size(head)){
@@ -116,16 +116,29 @@ int main()
     cout<< endl;
     reverse_print_link_list(tail);
     cout<<endl;
-    cout<<"size of link list :"<<size(head)<<endl;
-    int pos;
-    cin>>pos;
-    //here position is index..
-    delte_at_position(head,tail,pos);
-   
-    print_link_list(head);
-    cout<<endl;
-    reverse_print_link_list(tail);
-    cout<<endl;
+    cout<<"size of link list :"<<size(head)<<endl;\
+    int input;
+    while(true){
+        cout<<"to exit please press '0' "<<endl;
+        cout<<"to delete press '1' : "<<endl;
+        cin>>input;
+        if(input == 1){
+            cout<<"enter your desired position to delete:"<<endl;
+            int pos;
+            cin>>pos;
+            //here position is index..
+            delte_at_position(head,tail,pos);
+        
+            print_link_list(head);
+            cout<<endl;
+            reverse_print_link_list(tail);
+            cout<<endl;
+            
+        }
+        else if (input == 0){
+            break;
+        }
+    }
       
     return 0;
 }
