@@ -61,6 +61,16 @@ void reverse(Node *head, Node *tail)
     cout<<"Reversed"<<endl;
 }
 
+void reverse_v2(Node* head, Node* tail) {
+    for (Node *i = head, *j = tail;
+         i != NULL && j != NULL && i != j && i->prev != j;
+         i = i->next, j = j->prev)
+    {
+        swap(i->value, j->value);
+    }
+}
+
+
 int main()
 {
 
@@ -95,7 +105,12 @@ int main()
     print_link_list(head);
     cout << endl;
     reverse_print_link_list(tail);
+    cout<<endl;
+    cout <<"Reversed doubly linked list :"<< endl;
+    reverse_v2(head,tail);
+    print_link_list(head);
     cout << endl;
+    
 
     return 0;
 }
