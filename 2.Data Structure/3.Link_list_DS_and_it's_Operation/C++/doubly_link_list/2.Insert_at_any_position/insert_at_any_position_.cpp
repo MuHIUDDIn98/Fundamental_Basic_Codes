@@ -17,6 +17,7 @@ public:
 
 void print_link_list(Node *head){
      Node *tmp = head;
+     cout<<"L -> ";
     while (tmp != NULL)
     {
         cout << tmp->value << " ";
@@ -27,6 +28,7 @@ void print_link_list(Node *head){
 
 void reverse_print_link_list(Node *tail){
       Node *tmp = tail;
+      cout<<"R -> ";
     while (tmp != NULL)
     {
         cout << tmp->value << " ";
@@ -74,7 +76,7 @@ void insert_at_tail(Node *&head,Node *&tail,int val){
 void insert_at_position(Node *&head,Node *&tail,int pos,int val){ 
 
     if(pos>size(head)){
-            cout<<"invalud position"<<endl;
+            cout<<"invalid"<<endl;
             return;
         }
     else if(pos == size(head)){

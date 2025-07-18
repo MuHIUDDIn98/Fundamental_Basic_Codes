@@ -91,7 +91,7 @@ public:
 };
 
 int main()
-{
+{   // Write your code here
     DoublyLinkedList dll;
     // Input the doubly linked list
     string value;
@@ -115,7 +115,6 @@ int main()
         if (command == "visit")
         {
             cin >> address;
-            ;
             cout << dll.findNode(address) << endl;
         }
         else if (command == "next")
