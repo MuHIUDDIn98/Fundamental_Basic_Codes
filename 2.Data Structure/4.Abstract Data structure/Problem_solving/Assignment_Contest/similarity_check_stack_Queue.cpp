@@ -136,8 +136,7 @@ class myQuee
 int main()
 {
     int n, m;
-    cin >> n;
-    cin >> m;
+    cin >> n >>m;
 
     myStack st1;
     for (int i = 0; i < n; i++)
