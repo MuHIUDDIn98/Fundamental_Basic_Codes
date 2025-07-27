@@ -1,6 +1,6 @@
 # 🌟 Fundamental Programming Knowledge Repository
 
-Welcome to the **Fundamental Programming Knowledge Repository** — a structured and language-diverse resource designed to strengthen your core programming skills. Whether you're a beginner, student, or someone revisiting the basics, this repository will help you practice, compare, and master foundational concepts across **C++**, **Python**, and **Java** — with plans to include **JavaScript** in the future.
+A structured, language-diverse resource to build and strengthen core fundamental programming skills. This repository focuses on concepts and context over syntax, making it ideal for beginners, students, or anyone revisiting the fundamentals. Practice and compare key programming principles across C++, Python, and Java,javascript etc.
 
 ---
 
