@@ -13,16 +13,20 @@ class Node{
     }
 };
 
-void post_order(Node *root){
-     if(root == NULL){
-        return;
-     }
-     post_order(root->left);
-     post_order(root->right);
-     cout<<root->value<<" ";
-     
-}
 
+void level_order(Node *root){
+    queue<Node*>q;
+    q.push(root);
+    while(!q.empty()){
+        Node *f = q.front();
+        q.pop();
+
+        cout<<f->value<<" ";
+
+        if(f->left) q.push(f->left);
+        if(f->right) q.push(f->right);
+    }
+}
 int main(){
     Node *root = new Node(10);
     Node *a = new Node(20);
@@ -34,6 +38,7 @@ int main(){
     Node *g = new Node(80);
     Node *h = new Node(90);
     Node *i = new Node(100);
+    
     root->left = a;
     root->right = b;
     a->left = c;
@@ -44,7 +49,7 @@ int main(){
     d->left = f;
     d->right = g;
     
-    post_order(root);
+    level_order(root);
 
     return 0;
 }

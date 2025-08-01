@@ -123,7 +123,7 @@ int Max_height_count(Node *root){
         return 0;
     }
     if(root->left == NULL && root->right == NULL){
-        return 1;
+        return 0;
     }
     else{
         int l = Max_height_count(root->left);

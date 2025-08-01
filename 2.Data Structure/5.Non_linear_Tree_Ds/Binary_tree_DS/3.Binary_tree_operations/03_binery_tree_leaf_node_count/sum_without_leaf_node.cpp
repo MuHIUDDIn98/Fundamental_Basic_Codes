@@ -110,7 +110,7 @@ Node *input_tree()
 }
 
 int main()
-{
+{   // Write your code here
     Node *root = input_tree();
     cout << sum_without_leaf_Node(root) << endl;
 

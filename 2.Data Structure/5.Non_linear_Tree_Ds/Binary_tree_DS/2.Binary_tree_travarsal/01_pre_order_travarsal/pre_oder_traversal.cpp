@@ -13,14 +13,14 @@ class Node{
     }
 };
 
-void pre_order(Node *root){
+void pre_order(Node *root){      //root left right
      if(root == NULL){
         return;
      }
      cout<<root->value<<" ";
-     cout<<"->> ";
+    //  cout<<"->> ";
      pre_order(root->left);
-     cout<<" <<- ";
+    //  cout<<" <<- ";
      pre_order(root->right);
      
 }
@@ -39,11 +39,16 @@ int main(){
     
     root->left = a;
     root->right = b;
+
     a->left = c;
     a->right = h;
+
     b->right = d;
+
     c->right = e;
+
     h->right = i;
+    
     d->left = f;
     d->right = g;
     

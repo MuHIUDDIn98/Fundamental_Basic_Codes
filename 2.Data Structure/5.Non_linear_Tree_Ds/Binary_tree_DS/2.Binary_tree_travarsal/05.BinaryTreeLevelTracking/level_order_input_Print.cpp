@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 class Node{
     public:
     int value;
@@ -12,6 +13,7 @@ class Node{
         this->left = NULL;
     }
 };
+
 
 Node *input_tree()
 {
@@ -85,45 +87,44 @@ Node *input_tree()
     return root;
 }
 
-int Node_count(Node *root){
-    if(root==NULL){
-        return 0;
+
+void printLevel(Node* root, int targetLevel) {
+    if (!root) return;
+    bool valid = false;
+    queue<pair<Node*, int>> q;
+    q.push({root, 0});
+
+    //cout << "Nodes at level " << targetLevel << ": ";
+    while (!q.empty()) {
+        Node* node = q.front().first;
+        int level = q.front().second;
+        q.pop();
+
+        if (level == targetLevel) {
+            cout << node->value << " ";
+            valid =  true;
+        }
+
+        if (node->left)
+            q.push({node->left, level + 1});
+        if (node->right)
+            q.push({node->right, level + 1});
     }
-    int l = Node_count(root->left);
-    int r = Node_count(root->right);
-    return l+r+1;
+    //cout << endl;
+    if(!valid){
+        cout<<"Invalid"<<endl;
+    }
 }
-
-
-int Max_height_count(Node *root){
-    if(root==NULL){
-        return 0;
-    }
-    if(root->left == NULL && root->right == NULL){
-        return 1;
-    }
-    else{
-        int l = Max_height_count(root->left);
-        int r = Max_height_count(root->right);
-        return max(l,r)+1;
-    }
-    
-}
-
-
 
 
 int main(){
-    
+
     // Write your code here
-    Node *root = input_tree();
-    if(Node_count(root) == pow(2,(Max_height_count(root)))-1){
-        cout<<"YES"<<endl;
-    }
-    else{
-        cout<<"NO"<<endl;
-    }
+    int level;
+    Node * r = input_tree();
+    cin>>level;
+    printLevel(r,level);
 
-
-    return 0;
+   
+return 0;
 }

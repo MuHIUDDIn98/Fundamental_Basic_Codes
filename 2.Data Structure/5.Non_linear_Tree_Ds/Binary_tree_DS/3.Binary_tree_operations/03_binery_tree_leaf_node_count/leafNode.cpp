@@ -32,6 +32,26 @@ int Node_count(Node *root){
     return l+r+1;
 }
 
+int level_order_Node_count(Node *root){
+
+    int count = 0;
+    queue<Node*>q;
+
+    if(root) q.push(root);
+    while(!q.empty()){
+        Node *f = q.front();
+        q.pop();
+         
+        count ++;
+        // cout<<f->value<<" ";
+
+        if(f->left) q.push(f->left);
+        if(f->right) q.push(f->right);
+    }
+
+    return count;
+}
+
 int leaf_Node_count(Node *root){
     if(root==NULL){
         return 0;
@@ -76,6 +96,7 @@ int main(){
     pre_order(root);
     cout<<endl;
     cout<<"Node count :"<<Node_count(root)<<endl;
+    cout<<"Level order node count :"<<level_order_Node_count(root)<<endl;
     cout<<"leaf Node count :"<<leaf_Node_count(root)<<endl;
 
 

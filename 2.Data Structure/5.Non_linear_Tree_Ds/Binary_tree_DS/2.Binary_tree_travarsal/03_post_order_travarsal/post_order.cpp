@@ -13,14 +13,13 @@ class Node{
     }
 };
 
-void IN_order(Node *root){
+void post_order(Node *root){         //left right root
      if(root == NULL){
         return;
      }
-     IN_order(root->left);
+     post_order(root->left);
+     post_order(root->right);
      cout<<root->value<<" ";
-     IN_order(root->right);
-     
      
 }
 
@@ -35,7 +34,6 @@ int main(){
     Node *g = new Node(80);
     Node *h = new Node(90);
     Node *i = new Node(100);
-
     root->left = a;
     root->right = b;
     a->left = c;
@@ -46,7 +44,7 @@ int main(){
     d->left = f;
     d->right = g;
     
-    IN_order(root);
+    post_order(root);
 
     return 0;
 }
