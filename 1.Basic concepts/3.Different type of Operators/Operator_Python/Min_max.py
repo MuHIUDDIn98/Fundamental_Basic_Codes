@@ -1,0 +1,6 @@
+inp=input()
+l = inp.split()
+n1 = int(l[0])
+n2 = int(l[1])
+n3 = int(l[2])
+print(max(n1,n2,n3))
